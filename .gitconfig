@@ -1,0 +1,61 @@
+[user]
+  name = User
+  email = user@host.com
+
+[alias]
+  st = status
+  s = status
+  ci = commit
+  br = branch
+  b = branch
+  co = checkout
+  df = diff
+  f = fetch
+  l = log
+  p = push
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+
+
+  # add to previous commit
+  caa = commit -a --amend -C HEAD
+  cm = commit -m
+  ca = commit -a
+  cam = commit -a -m
+  ai = add --interactive
+
+  # resets
+
+  # to fix commit messages etc. (don't do it if pushed)
+  r1 = reset HEAD^ 
+  rh = reset --hard
+
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[color]
+  ui = true
+[color "diff"]
+  whitespace = red reverse
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  autocrlf = false
+  quotepath = false
+
+[apply]
+  whitespace = nowarn
