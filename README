@@ -1,0 +1,5 @@
+My .gitconfig-file.
+
+For more awesomeness add alias g='git' to your bash_profile and use "g" instead of "git" on the command line.
+
+Also take a look at my vim-config here: https://github.com/lukas2/vimconfig 
